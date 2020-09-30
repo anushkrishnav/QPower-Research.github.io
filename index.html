@@ -26,7 +26,7 @@
 
 </head>
 
-<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0"><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+<body onload="modal()" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0"><button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
 
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-scrolled">
@@ -972,6 +972,27 @@
         </ul>
       </nav><div class="mobile-nav-overly"></div>
 
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Hey there! Welcome to QPower Research.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              QPower is a Quantum Research Community that was formed under the Microsoft Student Partner Program by Syed Farhan in 2019. We are a group of researchers/students, aiming for a research driven community in Quantum Computing.
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a href="https://www.google.com/"><button type="button" class="btn btn-primary" >Join the Community</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 
   <!--Start of Tawk.to Script-->
@@ -985,6 +1006,8 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
+
+    $('#myModal').modal()
     </script>
     <!--End of Tawk.to Script-->
 </body></html>
